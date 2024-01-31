@@ -1,12 +1,9 @@
 'use client';
-
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
 import { data } from '../data';
 import { FaAngleRight } from 'react-icons/fa';
 function Slider() {
-  // const [wrapper, setWrapper] = useState(0);
-
   let wrapper;
   if (typeof window !== 'undefined') {
     wrapper = document.querySelector('.card-wrapper');
@@ -16,17 +13,15 @@ function Slider() {
     let width = wrapper.clientWidth;
     let totalWidth = wrapper.scrollWidth;
     wrapper.scrollLeft = wrapper.scrollLeft - width;
-    if (wrapper.scrollLeft <= 0) {
-      wrapper.scrollLeft = totalWidth - width;
+    if (wrapper.scrollLeft == 0) {
+      wrapper.scrollLeft = totalWidth;
     }
   };
 
   const handleNextClick = () => {
     let width = wrapper.clientWidth;
     let totalWidth = wrapper.scrollWidth;
-    console.log(totalWidth);
     wrapper.scrollLeft = wrapper.scrollLeft + width;
-    console.log(wrapper.scrollLeft);
     if (wrapper.scrollLeft + width >= totalWidth) {
       wrapper.scrollLeft = 0;
     }
@@ -42,15 +37,12 @@ function Slider() {
           </button>
         </div>
         <div className="relative lg:pr-9 pr-6">
-          <button className="inline-block absolute top-[40%] left-[-40px] bg-white rounded-full p-3 border-[3px] border-gray-500">
-            <FaLongArrowAltLeft
-              onClick={handlePrevClick}
-              color="grey"
-              size={20}
-            />
+          <button
+            className={`inline-block absolute top-[40%] left-[-40px] bg-white rounded-full p-3 border-[3px] border-gray-500`}>
+            <FaLongArrowAltLeft onClick={handlePrevClick} size={20} />
           </button>
           <button
-            disabled={true}
+            disabled={false}
             onClick={handleNextClick}
             className="inline-block right-arrow absolute top-[40%] right-[-40px] cursor-pointer bg-white rounded-full p-3 border-[3px] border-gray-500">
             <FaLongArrowAltRight color="grey" size={20} />
