@@ -50,6 +50,7 @@ function Slider() {
             />
           </button>
           <button
+            disabled={true}
             onClick={handleNextClick}
             className="inline-block right-arrow absolute top-[40%] right-[-40px] cursor-pointer bg-white rounded-full p-3 border-[3px] border-gray-500">
             <FaLongArrowAltRight color="grey" size={20} />

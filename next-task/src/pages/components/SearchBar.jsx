@@ -4,7 +4,7 @@ import { IoSettingsSharp } from 'react-icons/io5';
 function SearchBar() {
   return (
     <div>
-      <div className="lg:px-8 px-2 h-20 w-100 flex items-center justify-between">
+      <div className="lg:px-8 md:px-6 px-2 h-20 w-100 flex items-center justify-between">
         <div className="font-semibold flex gap-1 items-center">
           <div className="p-1 rounded-md bg-[#4667e2] text-[white]">
             <IoSettingsSharp className="text-[16px] lg:text-[24px]" />
@@ -15,7 +15,7 @@ function SearchBar() {
         </div>
         <div>
           <input
-            className="lg:w-[400px] w-[160px]  bg-gray-200/80 lg:text-[14px] text-[10px] lg:px-4 px-2 lg:h-[40px] h-[30px] rounded-full"
+            className="lg:w-[400px] md:w-[350px] w-[160px]  bg-gray-200/80 lg:text-[14px] text-[10px] lg:px-4 px-2 lg:h-[40px] h-[30px] rounded-full"
             type="text"
             placeholder="Search for Movies, TV Shows, Themes & Cast"
           />
