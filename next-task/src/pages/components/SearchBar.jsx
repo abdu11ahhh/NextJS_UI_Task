@@ -15,7 +15,7 @@ function SearchBar() {
         </div>
         <div>
           <input
-            className="lg:w-[400px] md:w-[350px] w-[160px]  bg-gray-200/80 lg:text-[14px] text-[10px] lg:px-4 px-2 lg:h-[40px] h-[30px] rounded-full"
+            className="lg:w-[400px] md:w-[350px] w-[210px]  bg-gray-200/80 lg:text-[14px] text-[12px] lg:px-4 px-2 lg:h-[40px] h-[30px] rounded-full"
             type="text"
             placeholder="Search for Movies, TV Shows, Themes & Cast"
           />
