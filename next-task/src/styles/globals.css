@@ -1,9 +1,37 @@
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
+@tailwind base;
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.footer-icons span:hover {
+  color: black;
+}
+
+.footer-links div ul li {
+  margin-bottom: 5px;
+  color: rgb(97, 97, 97);
+  font-size: 12px;
+}
+.footer-links div ul li a:hover {
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+}
+.footer-links div ul li:nth-child(1) {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.footer-links2 li a {
+  color: #888888;
+}
+
+.footer-links2 li a:hover {
+  color: #000;
+  text-decoration: underline;
 }

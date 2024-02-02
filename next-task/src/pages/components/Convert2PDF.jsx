@@ -31,7 +31,7 @@ const data = [
 function Convert2PDF() {
   return (
     <>
-      <div className="lg:px-20 px-8 lg:pt-4">
+      <div className="lg:px-20 pb-8 px-8 lg:pt-4">
         <h1 className="font-bold text-[30px] mb-[24px]">Convert From PDF</h1>
         <div className="flex flex-wrap gap-[32px]">
           {data.map((d) => {
