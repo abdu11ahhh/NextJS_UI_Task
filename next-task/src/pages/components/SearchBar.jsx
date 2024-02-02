@@ -22,7 +22,7 @@ function SearchBar() {
         </div>
         <div className="font-semibold text-[12px] lg:text-[16px]">
           <button>Login</button>
-          <button className="lg:ml-4 ml-2 lg:px-5 px-3 py-2 lg:py-3 text-white rounded-full bg-[#4667e2]">
+          <button className="lg:ml-4 ml-2 lg:px-5 px-3 py-2 lg:py-3 text-white rounded-full bg-[#4667e2] hover:bg-[#3953b4]">
             Sign up
           </button>
         </div>
