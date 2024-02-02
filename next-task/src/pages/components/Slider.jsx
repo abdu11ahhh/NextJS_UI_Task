@@ -76,7 +76,7 @@ const Slider = () => {
         </div>
         <div
           ref={carousel}
-          className="carousel-container relative flex gap-[32px] mx-12 overflow-x-hidden pb-10 scroll-smooth snap-x snap-mandatory">
+          className="carousel-container relative flex gap-[32px] mx-12 overflow-x-hidden pb-8 scroll-smooth snap-x snap-mandatory">
           {data.map((d) => {
             return (
               <div
