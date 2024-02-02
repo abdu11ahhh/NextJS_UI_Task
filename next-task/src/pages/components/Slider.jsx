@@ -62,20 +62,20 @@ const Slider = () => {
         <div className="w-full h-full">
           <button
             onClick={movePrev}
-            className=" text-black border-2 bg-white z-10 border-[black] p-4 rounded-full top-[30%] left-[0px] absolute opacity-100 disabled:opacity-25 disabled:cursor-not-allowed"
+            className=" text-black border-2 bg-white z-10 border-[black] p-4 rounded-full top-[40%] left-[0px] absolute opacity-100 disabled:opacity-25 disabled:cursor-not-allowed"
             disabled={isDisabled('prev')}>
             <FaLongArrowAltLeft className="z-0" />
           </button>
           <button
             onClick={moveNext}
-            className="p-4 absolute top-[30%] right-0 border-[black] border-2 rounded-full  hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10"
+            className="p-4 absolute top-[40%] right-0 border-[black] border-2 rounded-full  hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10"
             disabled={isDisabled('next')}>
             <FaLongArrowAltRight />
           </button>
         </div>
         <div
           ref={carousel}
-          className="carousel-container relative flex mx-12 gap-[32px] overflow-x-hidden pb-24 scroll-smooth snap-x snap-mandatory">
+          className="carousel-container relative flex gap-[32px] mx-12 overflow-x-hidden pb-24 scroll-smooth snap-x snap-mandatory">
           {data.map((d) => {
             return (
               <div
@@ -87,8 +87,8 @@ const Slider = () => {
                     alt={d.alt}
                     className="w-[65px] aspect-square"
                   />
-                  <h1 className="text-[20px] mt-[16px] font-bold">{d.alt}</h1>
-                  <p className="text-[14px] mt-[12px] text-[grey]">{d.desc}</p>
+                  <h1 className="text-[18px] mt-[16px] font-bold">{d.alt}</h1>
+                  <p className="text-[12px] mt-[12px] text-[grey]">{d.desc}</p>
                 </a>
               </div>
             );
