@@ -17,7 +17,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/components/Slider2.jsx"
+    "src/pages/components/Slider.jsx"
   ],
   "exclude": ["node_modules"]
 }
